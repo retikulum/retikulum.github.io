@@ -35,7 +35,7 @@ Rust kurmak aşırı basit. Aşağıdaki komutu çalıştırmadan https://www.ru
 
 Bu aşamada nasıl yüklemek istediğimizi soruyor. Ben default installation seçip devam ediyorum.
 
-<img title="a title" alt="Alt text" src="./görseller/rust-installation.png">
+<img title="a title" alt="Alt text" src="/görseller/rust-installation.png">
 
 .
 
@@ -53,7 +53,7 @@ nano main.rs
 
 Görseldeki gibi yazıyoruz.
 
-<img title="a title" alt="Alt text" src="./görseller/hello-world.png">
+![Image](./görseller/hello-world.png)
 
 Derliyoruz. 
 
