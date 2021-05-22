@@ -1,4 +1,4 @@
-## Rust İle Fuzzer Yazıyorum
+## Rust ile fuzzer yazma
 - [Giriş](https://retikulum.github.io/giris.html)
 
 ## Contact Me
