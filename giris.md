@@ -35,7 +35,7 @@ Rust kurmak aşırı basit. Aşağıdaki komutu çalıştırmadan https://www.ru
 
 Bu aşamada nasıl yüklemek istediğimizi soruyor. Ben default installation seçip devam ediyorum.
 
-<img title="a title" alt="Alt text" src="/görseller/rust-installation.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/rust-installation.png">
 
 .
 
@@ -53,7 +53,7 @@ nano main.rs
 
 Görseldeki gibi yazıyoruz.
 
-![Image](./görseller/hello-world.png)
+![Image](./gorseller/giris-ss/hello-world.png)
 
 Derliyoruz. 
 
@@ -64,7 +64,7 @@ Derliyoruz.
 
 `./main` diyerek çalıştırdığımızda ise çıktımızı görüyoruz.
 
-<img title="a title" alt="Alt text" src="./görseller/Hello-world-cikti.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/Hello-world-cikti.png">
 
 Hello World! yazısını gördükten sonra devam edebiliriz. Rustc ile devam edebiliriz ama cargo kullanarak ilerleyeceğim. Cargo rust'ın build ve paket yöneticisi diyebiliriz. (https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
@@ -76,7 +76,7 @@ cargo init
 
 Bunları çalıştırdıktan sonra rust'ın kendi yapısına uygun dosyalar gelicek. Rastgele sayı üretmek için rand kütüphanesini kullanmamız gerekmektedir. Cargo.toml dosyasının [dependencies]'ın altına rand = "0.8.3" yapıştırıyoruz.
 
-<img title="a title" alt="Alt text" src="./görseller/rand-eklendi.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/rand-eklendi.png">
 
 Bundan sonraki kodları src klasörü altındaki main.rs'e yazıp `cargo run` ile çalıştırmayı düşünüyorum. Rastgele byte üretmeye başlayalım. Takip edilecek tutorial: https://rust-lang-nursery.github.io/rust-cookbook/algorithms/randomness.html
 
@@ -97,7 +97,7 @@ fn main(){
 
 Bunu src/main.rs'e yazdıktan sonra `cargo build` ve `cargo run` diyerek çalıştırıyoruz.
 
-<img title="a title" alt="Alt text" src="./görseller/rastgele-sayi.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/rastgele-sayi.png">
 
 
 Random byte üretmek içinde aynı fonksiyonu farklı bir şekilde çalıştırıcaz. (https://qertoip.medium.com/how-to-generate-an-array-of-random-bytes-in-rust-ccf742a1afd5)
@@ -117,7 +117,7 @@ fn main(){
 ```
 Çıktısı:
 
-<img title="a title" alt="Alt text" src="./görseller/random-byte-array.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/random-byte-array.png">
 
 Random byteları ürettikten sonra bunları dosyaya yazalım. Bu dosyayı daha sonra input olarak fuzz edeceğimiz programa vereceğiz. Elimden geldiğince yorum yazmaya çalışıyorum kodlara. (https://stackoverflow.com/questions/53826371/how-to-create-a-binary-file-with-rust/53827079)
 
@@ -145,11 +145,11 @@ fn main(){
 
 Gerçekten düzgünce yazıyor mu diye kontrol ettiğimizde sorun olmadığını görüyoruz. Değerleri decimal olarak bastırıp byte olarak yazdığım için hexadecimal karşılıkları yazılıyor. Bizimde istediğimiz bu zaten.
 
-<img title="a title" alt="Alt text" src="./görseller/byte-kontrol-1.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/byte-kontrol-1.png">
 
 Gerçekten doğru mu yazdığından emin olmak için kontrol ediyoruz.
 
-<img title="a title" alt="Alt text" src="./görseller/byte-kontrol-2.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/byte-kontrol-2.png">
 
 Bu noktadan sonra input adında bir dosyanın oluşması gerekiyor. Şimdi rust ile komut çalıştırmayı deneyelim. Bunu yapmamızın nedeni bundan sonraki adımda fuzz edeceğimiz komutu istediğimiz inputla çalıştırmak.
 ```
@@ -181,7 +181,7 @@ fn main(){
 }
 ```
 
-<img title="a title" alt="Alt text" src="./görseller/file-komutunu-calistirma.png">
+<img title="a title" alt="Alt text" src="./gorseller/giris-ss/file-komutunu-calistirma.png">
 
 Düzgün çalıştığından emin olduktan sonra bunu 10 kere dönen bir for döngüsüne koyup aptal ama çalışan ilk fuzzerımızı yazmış olalım. For döngüsünü istediğiniz kere çalıştırıp bütün elemanları rastgele olan inputlarla fuzz edebilirsiniz.
 ```
