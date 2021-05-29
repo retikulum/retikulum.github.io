@@ -11,7 +11,7 @@ Rust ve fuzzer konusunu sıfırdan öğrendiğim için bu yazıda hatalar olabil
 -   [Rust Book](https://doc.rust-lang.org/book/)
 
 ## İçerik
--   Mutasyon nedir?
+-   Mutasyon Nedir?
 -   Mutasyon Tipleri
 -   Az Akıllı Fuzzer
 -   İmplementasyon
