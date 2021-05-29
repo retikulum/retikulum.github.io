@@ -1,7 +1,7 @@
 # Rust ile Fuzzer Yazıyorum 2
 
 ## Giriş
-İlk yazıda fuzzing konseptine küçük bir giriş yapmıştık. Bu yazıda ise daha çok fuzzingin önemli bir parçası olan mutasyonlar üzerinde konuşacağız. Bu yazı serisi tutorialdan ziyade kendi çalışmalarımdan aldığım notlardır.
+İlk yazıda fuzzing konseptine küçük bir giriş yapmıştık. Bu yazıda ise daha çok fuzzingin önemli bir parçası olan mutasyonlar üzerinde konuşacağız. Bu yazı serisi tutorialdan ziyade kendi çalışmalarımdan aldığım notlardır. Kaynak kodları yavaş yavaş [Github](https://github.com/retikulum/fuzz) üzerinden paylaşmaya başladım.
 
 ## Referanlar
 Rust ve fuzzer konusunu sıfırdan öğrendiğim için bu yazıda hatalar olabilir. Kullandığım referanslar aşağıdadır:
